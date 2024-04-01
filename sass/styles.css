@@ -1075,7 +1075,7 @@ H3 {
   .lien_footer {
     display: flex;
     align-items: center;
-    width: 23%;
+    width: 30%;
     justify-content: space-around;
   }
   .lien_footer i {
