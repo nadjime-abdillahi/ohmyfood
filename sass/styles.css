@@ -272,9 +272,6 @@ main section div h2 {
   color: black;
   text-align: center;
 }
-.align-center i:hover {
-  background-color: #fcc0ce;
-}
 
 .padding_texte_menu {
   padding: 10px;
