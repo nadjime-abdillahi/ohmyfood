@@ -278,6 +278,7 @@
   
       section {
         border-radius: 20px 20px 0px 0px;
+        overflow: hidden;
   
         div h2 {
           height: 50px;
@@ -361,7 +362,7 @@
       border-radius: 10px;
       box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
-      padding: 10px;
+      white-space: nowrap;
 
       .ensemble {
         display: flex;
@@ -376,6 +377,12 @@
 
       .PlatDescription {
         padding: 10px;
+        overflow: hidden;
+
+        p {
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
       }
   
       .elementVert {
@@ -400,6 +407,8 @@
       H3 {
         font-weight: bold;
         margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
   
     .bouton_commander {
@@ -817,7 +826,6 @@
       border-radius: 10px;
       box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
-      padding: 10px;
 
       .ensemble {
         display: flex;
