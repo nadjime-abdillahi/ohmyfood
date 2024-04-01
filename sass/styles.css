@@ -1,10 +1,422 @@
 @charset "UTF-8";
 
-@media only screen and (max-width: 667px) {
-  /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+/* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+html, body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.header_nav, main section {
+  padding: 10px;
+}
+
+.headerLogoIndex {
+  width: 100%;
+  text-align: center;
+}
+.headerLogoIndex img {
+  width: 50%;
+}
+.headerLogoIndex .logoDesktop {
+  display: none;
+}
+
+.headerLogoPage2 {
+  width: 100%;
+  margin: auto;
+}
+.headerLogoPage2 img {
+  width: 100%;
+  margin: 0;
+}
+
+.header_h1 {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.header_h1 h1 {
+  padding: 10px 0px 0px 0px;
+  margin: 0;
+}
+
+.header_bouton {
+  background: linear-gradient(100deg, #9356DC -50%, #FF79DA 50%);
+  width: 250px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.nav_lien {
+  display: block;
+}
+
+.number1 {
+  background-color: #9356DC;
+  position: absolute;
+  width: 7%;
+  height: 4%;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  left: 35px;
+}
+.number1 div {
+  margin: auto;
+  color: white;
+}
+
+.nouveauplat {
+  background-color: #99E2D0;
+  position: absolute;
+  width: 30%;
+  height: 4%;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  left: 210px;
+  top: 725px;
+}
+.nouveauplat div {
+  margin: auto;
+  color: #008766;
+}
+
+.nouveauplat2 {
+  background-color: #99E2D0;
+  position: absolute;
+  width: 30%;
+  height: 4%;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  left: 210px;
+  top: 980px;
+}
+.nouveauplat2 div {
+  margin: auto;
+  color: #008766;
+}
+
+.tailleCoeurRose {
+  width: 30%;
+}
+
+.recentrer {
+  width: 80%;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+.centrer {
+  width: 100%;
+  text-align: center;
+  height: 70px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-bg-header-color);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.centrer svg {
+  width: 30%;
+}
+
+.reglages_menu {
+  background-color: white;
+  border-radius: 20px;
+}
+.reglages_menu img {
+  width: 100%;
+}
+
+.menu_restaurants {
+  display: block;
+  width: 80%;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+.recadrimage {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.recadrimage2 {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+.recadrimage2 img {
+  margin: -230px 0px 0px 0px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 10px;
+}
+
+.lien_footer, .lien_footer2 {
+  width: 100%;
+  display: block;
+}
+
+.lien_footer a, .lien_footer2 a {
+  display: block;
+}
+
+.headerLogofooter {
+  width: 100%;
+}
+.headerLogofooter h3 {
+  font-family: shrikhand;
+  font-style: italic;
+  color: white;
+}
+
+.lien_footer a, .lien_footer2 a {
+  color: white;
+  text-decoration: none;
+  margin: auto;
+}
+
+:root {
+  --main-bg-header-color:#F6F6F6;
+  --main-bg-header2-color:#FFFFFF;
+  --main-bg-header3-color:#EAEAEA;
+  --filter-bg-color:#DEEBFF;
+}
+
+/*header*/
+.resto_localisation {
+  background-color: var(--main-bg-header3-color);
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.resto_localisation p {
+  margin: auto;
+  width: 50%;
+}
+.resto_localisation p svg {
+  width: 7%;
+}
+
+.header_h1 h1 {
+  padding: 10px 0px 0px 0px;
+  margin: 0;
+}
+
+.bg_para_et_bouton {
+  background-color: var(--main-bg-header-color);
+}
+
+.header_nav {
+  background-color: var(--main-bg-header2-color);
+}
+
+.headerLogo, .resto_localisation, .header_h1 {
+  text-align: center;
+}
+
+.header_bouton {
+  text-align: center;
+}
+.header_bouton a {
+  text-decoration: none;
+  margin: auto;
+  color: white;
+}
+
+.nav_lien div a {
+  text-decoration: none;
+  color: black;
+}
+
+.header_nav, main section {
+  margin: auto;
+}
+
+/* restaurants */
+/*image recadrée*/
+main {
+  background-color: var(--main-bg-header-color);
+  border-radius: 20px 20px 0px 0px;
+}
+main section {
+  border-radius: 20px 20px 0px 0px;
+}
+main section div h2 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.align-center i {
+  color: black;
+  text-align: center;
+}
+.align-center i:hover {
+  background-color: #fcc0ce;
+}
+
+.padding_texte_menu {
+  padding: 10px;
+}
+
+/*image palette */
+.imagePalette {
+  width: 100%;
+}
+.imagePalette img {
+  width: 100%;
+}
+
+.titrePalette {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.titrePalette h1 {
+  margin: 0;
+}
+.titrePalette .fa-solid {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* main */
+.mainMobile {
+  position: relative;
+  bottom: 60px;
+}
+
+.entreePlat {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.plats {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.plats .ensemble {
+  display: flex;
+}
+.plats .euro {
+  display: flex;
+  align-items: end;
+  font-weight: bold;
+  padding: 10px;
+}
+.plats .PlatDescription {
+  padding: 10px;
+}
+.plats .elementVert {
+  width: 50px;
+  background-color: rgb(153, 226, 208);
+  margin-right: -60px;
+  transition: all 1s;
+  display: grid;
+  place-items: center;
+}
+.plats .elementVert i {
+  background: white;
+  border-radius: 50px;
+}
+.plats:hover .elementVert {
+  margin-right: 0px;
+}
+
+H3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.bouton_commander {
+  background: linear-gradient(175.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  width: 250px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin: auto;
+}
+.bouton_commander a {
+  text-decoration: none;
+  margin: auto;
+  color: white;
+}
+
+/*note enchantée*/
+.imageNote3 {
+  position: relative;
+  width: 100%;
+}
+.imageNote3 img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainMobile2 {
+  display: flex;
+  bottom: 60px;
+  position: relative;
+  top: -120px;
+}
+
+.check {
+  margin: negative;
+  width: 40px;
+  height: 30px;
+  background-color: #008766;
+}
+
+.check:hover {
+  margin: positive;
+}
+
+@media screen and (min-width: 668px) and (max-width: 1023px) {
   html, body {
     margin: 0;
     font-family: Roboto;
+  }
+  .header_nav {
+    margin: auto;
+    width: 80%;
   }
   .header_nav, main section {
     padding: 10px;
@@ -26,6 +438,9 @@
   .headerLogoPage2 img {
     width: 100%;
     margin: 0;
+  }
+  .headerLogoPage2 .imgMobile {
+    display: none;
   }
   .header_h1 {
     height: 100%;
@@ -51,13 +466,13 @@
   .number1 {
     background-color: #9356DC;
     position: absolute;
-    width: 7%;
+    width: 5%;
     height: 4%;
     border-radius: 50px;
     text-align: center;
     display: flex;
     align-items: center;
-    left: 35px;
+    left: 60px;
   }
   .number1 div {
     margin: auto;
@@ -72,8 +487,8 @@
     text-align: center;
     display: flex;
     align-items: center;
-    left: 210px;
-    top: 725px;
+    left: 380px;
+    top: 700px;
   }
   .nouveauplat div {
     margin: auto;
@@ -88,7 +503,7 @@
     text-align: center;
     display: flex;
     align-items: center;
-    left: 210px;
+    left: 380px;
     top: 980px;
   }
   .nouveauplat2 div {
@@ -99,9 +514,8 @@
     width: 30%;
   }
   .recentrer {
-    width: 80%;
-    margin-left: 35px;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 0;
   }
   .centrer {
     width: 100%;
@@ -126,8 +540,8 @@
   .menu_restaurants {
     display: block;
     width: 80%;
-    margin-left: 35px;
-    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 30px;
   }
   .recadrimage {
     height: 150px;
@@ -184,7 +598,7 @@
     width: 50%;
   }
   .resto_localisation p svg {
-    width: 7%;
+    width: 3%;
   }
   .header_h1 h1 {
     padding: 10px 0px 0px 0px;
@@ -222,6 +636,7 @@
   }
   main section {
     border-radius: 20px 20px 0px 0px;
+    width: 80%;
   }
   main section div h2 {
     height: 50px;

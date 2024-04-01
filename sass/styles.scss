@@ -1,8 +1,6 @@
 @use "./animations.css";
 
-@media only screen and (max-width: 667px) {
-    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
-  
+ /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
     html, body {
       margin: 0;
       //styleName: Section Title;
@@ -445,6 +443,461 @@
     .check:hover {
       margin: positive;
     }
+
+  @media screen and (min-width: 668px) and (max-width: 1023px) {
+
+    html, body {
+      margin: 0;
+      //styleName: Section Title;
+      font-family: Roboto;
+
+    }
+
+    .header_nav {
+      margin: auto;
+      width: 80%;
+    }
+  
+    .header_nav, main section {
+      padding: 10px;
+    }
+  
+    .headerLogoIndex {
+      width: 100%;
+      text-align: center;
+  
+      img {
+        width: 50%;
+      }
+
+      .logoDesktop {
+        display: none;
+      }
+    }
+  
+    .headerLogoPage2 {
+      width: 100%;
+      margin: auto;
+  
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .imgMobile {
+        display: none;
+      }
+    }
+  
+    .header_h1 {
+      height: 100%;
+      width: 80%;
+      margin: auto;
+  
+      h1 {
+        padding: 10px 0px 0px 0px;
+        margin: 0;
+      }
+    }
+  
+    .header_bouton {
+      background: linear-gradient(100.00deg, #9356DC -50.00%, #FF79DA 50.00%);
+      width: 250px;
+      height: 40px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      margin: auto;
+    }
+  
+    .nav_lien {
+      display: block;
+    }
+  
+    .number1 {
+      background-color: #9356DC;
+      position: absolute;
+      width: 5%;
+      height: 4%;
+      border-radius: 50px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      left: 60px;
+  
+      div {
+        margin: auto;
+        color: white;
+      }
+    }
+  
+    .nouveauplat {
+      background-color: #99E2D0;
+      position: absolute;
+      width: 30%;
+      height: 4%;
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      left: 380px;
+      top: 700px;
+  
+      div {
+        margin: auto;
+        color: #008766;
+      }
+    }
+  
+    .nouveauplat2 {
+      background-color: #99E2D0;
+      position: absolute;
+      width: 30%;
+      height: 4%;
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      left: 380px;
+      top: 980px;
+  
+      div {
+        margin: auto;
+        color: #008766;
+      }
+    }
+  
+    .tailleCoeurRose {
+      width: 30%;
+    }
+  
+    .recentrer {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .centrer {
+      width: 100%;
+      text-align: center;
+      height: 70px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      background-color: var(--main-bg-header-color);
+      box-shadow: 0px 4px 15px 0px #00000026;
+
+      svg {
+        width: 30%;
+      }
+    }
+  
+    .reglages_menu {
+      background-color: white;
+      border-radius: 20px;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .menu_restaurants {
+      display: block;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+  
+    .recadrimage {
+      height: 150px;
+      overflow: hidden;
+      border-radius: 20px 20px 0px 0px;
+    }
+  
+    .recadrimage2 {
+      height: 150px;
+      overflow: hidden;
+      border-radius: 20px 20px 0px 0px;
+  
+      img {
+        margin: -230px 0px 0px 0px;
+      }
+    }
+  
+    footer {
+      background-color: #353535;
+      padding: 10px;
+    }
+  
+    .lien_footer, .lien_footer2 {
+      width: 100%;
+      display: block;
+    }
+  
+    .lien_footer a, .lien_footer2 a {
+      display: block;
+    }
+  
+    .headerLogofooter {
+      width: 100%;
+  
+      h3 {
+        font-family: shrikhand;
+        font-style: italic;
+        color: white;
+      }
+    }
+  
+    .lien_footer a, .lien_footer2 a {
+      color: white;
+      text-decoration: none;
+      margin: auto;
+    }
+  
+    :root {
+      --main-bg-header-color:#F6F6F6;
+      --main-bg-header2-color:#FFFFFF;
+      --main-bg-header3-color:#EAEAEA;
+      --filter-bg-color:#DEEBFF;
+    }
+  
+    /*header*/
+  
+    .resto_localisation {
+      background-color: var(--main-bg-header3-color);
+      height: 30px;
+      display: flex;
+      align-items: center;
+  
+      p {
+        margin: auto;
+        width: 50%;
+  
+        svg {
+          width: 3%;
+        }
+      }
+    }
+  
+    .header_h1 h1 {
+      padding: 10px 0px 0px 0px;
+      margin: 0;
+    }
+  
+    .bg_para_et_bouton {
+      background-color: var(--main-bg-header-color);
+    }
+  
+    .header_nav {
+      background-color: var(--main-bg-header2-color);
+    }
+  
+    .headerLogo, .resto_localisation, .header_h1 {
+      text-align: center;
+    }
+  
+    .header_bouton {
+      text-align: center;
+  
+      a {
+        text-decoration: none;
+        margin: auto;
+        color: white;
+      }
+    }
+  
+    .nav_lien div a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .header_nav, main section {
+      margin: auto;
+    }
+  
+    /* restaurants */
+  
+    /*image recadrée*/
+  
+    main {
+      background-color: var(--main-bg-header-color);
+      border-radius: 20px 20px 0px 0px;
+  
+      section {
+        border-radius: 20px 20px 0px 0px;
+        width: 80%;
+  
+        div h2 {
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  
+    .d-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .align-center {
+      width: 20%;
+      display: flex;
+      align-items: center;
+  
+      i {
+        color: black;
+        text-align: center;
+  
+        &:hover {
+          background-color: #fcc0ce;
+        }
+      }
+    }
+  
+    .padding_texte_menu {
+      padding: 10px;
+    }
+  
+    /*image palette */
+  
+    .imagePalette {
+      width: 100%;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .titrePalette {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 20px;
+  
+      h1 {
+        margin: 0;
+      }
+
+      .fa-solid {
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  
+    /* main */
+  
+    .mainMobile {
+      position: relative;
+      bottom: 60px;
+    }
+  
+    .entreePlat {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  
+    .plats {
+      display: flex;
+      overflow: hidden;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+
+      .ensemble {
+        display: flex;
+      }
+
+      .euro {
+        display: flex;
+        align-items: end;
+        font-weight: bold;
+        padding: 10px;
+      }
+
+      .PlatDescription {
+        padding: 10px;
+      }
+  
+      .elementVert {
+        width: 50px;
+        background-color: rgba(153, 226, 208, 1);
+        margin-right: -60px;
+        transition: all 1s;
+        display: grid;
+        place-items: center;
+
+        i {
+          background: white;
+          border-radius: 50px;
+        }
+      }
+
+      &:hover .elementVert{
+        margin-right: 0px;
+      }
+    }
+  
+      H3 {
+        font-weight: bold;
+        margin: 0;
+      }
+  
+    .bouton_commander {
+      background: linear-gradient(175.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+      width: 250px;
+      margin-left: 60px;
+      margin-bottom: 20px;
+      height: 40px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin: auto;
+  
+      a {
+        text-decoration: none;
+        margin: auto;
+        color: white;
+      }
+    }
+  
+    /*note enchantée*/
+  
+    .imageNote3 {
+      position: relative;
+      width: 100%;
+  
+      img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+      }
+    }
+  
+    .mainMobile2 {
+      display: flex;
+      bottom: 60px;
+      position: relative;
+      top: -120px;
+    }
+
+    .check {
+      margin: negative;
+      width: 40px;
+      height: 30px;
+      background-color: #008766;
+    }
+
+    .check:hover {
+      margin: positive;
+    }
+    
   }
   
   @media screen and (min-width: 1024px) {

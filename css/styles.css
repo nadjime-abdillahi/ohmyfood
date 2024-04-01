@@ -1,5 +1,4 @@
- @media only screen and (max-width: 667px) {
-    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+ /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
     html {
         margin: 0;
     }
@@ -394,7 +393,6 @@
         position: relative;
         top: -120px;
     }
-}
 
 @media screen and (min-width: 1024px) {
 
