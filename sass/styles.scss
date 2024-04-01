@@ -1,10 +1,17 @@
 @use "./animations.css";
 
  /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
-    html, body {
+    html {
       margin: 0;
       //styleName: Section Title;
+    }
+
+    body {
+      //styleName: Section Title;
       font-family: Roboto;
+      font-weight: 700;
+      line-height: 28.13px;
+      text-align: left;
 
     }
   
@@ -63,7 +70,7 @@
     .number1 {
       background-color: #9356DC;
       position: absolute;
-      width: 5%;
+      width: 7%;
       border-radius: 50px;
       text-align: center;
       display: flex;
@@ -85,8 +92,8 @@
       text-align: center;
       display: flex;
       align-items: center;
-      left: 210px;
-      top: 725px;
+      left: 205px;
+      top: 740px;
   
       div {
         margin: auto;
@@ -103,8 +110,8 @@
       text-align: center;
       display: flex;
       align-items: center;
-      left: 210px;
-      top: 980px;
+      left: 205px;
+      top: 990px;
   
       div {
         margin: auto;
@@ -227,6 +234,7 @@
     .header_h1 h1 {
       padding: 10px 0px 0px 0px;
       margin: 0;
+      font-size: 30px;
     }
   
     .bg_para_et_bouton {
@@ -298,6 +306,10 @@
   
     .padding_texte_menu {
       padding: 10px;
+
+      p {
+        margin: 0;
+      }
     }
   
     /*image palette */
@@ -349,6 +361,7 @@
       border-radius: 10px;
       box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
+      padding: 10px;
 
       .ensemble {
         display: flex;
@@ -538,7 +551,7 @@
       display: flex;
       align-items: center;
       left: 380px;
-      top: 700px;
+      top: 730px;
   
       div {
         margin: auto;
@@ -804,6 +817,7 @@
       border-radius: 10px;
       box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
+      padding: 10px;
 
       .ensemble {
         display: flex;
@@ -845,7 +859,7 @@
       }
   
     .bouton_commander {
-      background: linear-gradient(175.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+      background: linear-gradient(175.33deg, #FF79DA -30.44%, #9356DC 100.93%);
       width: 250px;
       margin-left: 60px;
       margin-bottom: 20px;
@@ -960,6 +974,20 @@
     main section {
       background-color: rgba(246, 246, 246, 1);
     }
+
+    .header_h1 {
+
+      h1 {
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
   
     .header_h2 {
       text-align: left;
@@ -1002,7 +1030,7 @@
     }
   
     .header_bouton {
-      background: linear-gradient(175.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+      background: linear-gradient(175.33deg, #FF79DA -30.44%, #9356DC 123.93%);
       width: 250px;
       margin-left: 60px;
       margin-bottom: 20px;
@@ -1030,6 +1058,7 @@
   
     .bg_para_et_bouton {
       background-color: var(--main-bg-header-color);
+      height: 200px;
     }
   
     .resto_localisation {
@@ -1091,7 +1120,7 @@
     .number1 {
       background-color: #9356DC;
       position: relative;
-      width: 4%;
+      width: 7%;
       border-radius: 50px;
       display: flex;
       align-items: center;
@@ -1113,6 +1142,10 @@
 
     .padding_texte_menu {
       text-align: left;
+
+      p {
+        margin: 0;
+      }
     }
 
     .menu_restaurants {
@@ -1126,7 +1159,7 @@
       display: flex;
       align-items: center;
       position: absolute;
-      top: 610px;
+      top: 700px;
       width: 120px;
       height: 30px;
       left: 510px;
@@ -1143,7 +1176,7 @@
       width: 120px;
       height: 30px;
       left: 1200px;
-      top: 610px;
+      top: 700px;
       border-radius: 5px;
       text-align: center;
       display: flex;
@@ -1157,7 +1190,6 @@
 
     .align-center {
       width: 10px;
-      margin-top: 20px;
 
       .fa-solid {
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -1199,7 +1231,7 @@
       justify-content: space-between;
       width: 90%;
       margin: auto;
-      height: 120px;
+      height: 80px;
     }
   
     .reglages_menu {
@@ -1383,6 +1415,8 @@
       align-items: center;
       text-align: center;
       margin: auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
   
       a {
         text-decoration: none;
