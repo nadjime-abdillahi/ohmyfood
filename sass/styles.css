@@ -889,7 +889,6 @@ H3 {
   }
   .bg_para_et_bouton {
     background-color: var(--main-bg-header-color);
-    height: 150px;
   }
   .resto_localisation {
     text-align: center;
