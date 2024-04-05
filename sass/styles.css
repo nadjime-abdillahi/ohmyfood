@@ -30,7 +30,7 @@ body {
 .headerLogoPage2 {
   width: 100%;
   margin: auto;
-  height: 90px;
+  height: 70px;
 }
 .headerLogoPage2 img {
   width: 100%;
@@ -160,7 +160,7 @@ body {
   border-radius: 20px 20px 0px 0px;
 }
 .recadrimage2 img {
-  margin: -230px 0px 0px 0px;
+  margin: -175px 0px 0px 0px;
 }
 
 footer {
@@ -965,7 +965,7 @@ H3 {
   .number1 {
     background-color: #9356DC;
     position: relative;
-    width: 7%;
+    width: 10%;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -1001,7 +1001,7 @@ H3 {
     top: 700px;
     width: 120px;
     height: 30px;
-    left: 510px;
+    left: 350px;
   }
   .nouveauplat div {
     margin: auto;
@@ -1012,7 +1012,7 @@ H3 {
     position: absolute;
     width: 120px;
     height: 30px;
-    left: 1200px;
+    left: 850px;
     top: 700px;
     border-radius: 5px;
     text-align: center;
@@ -1034,7 +1034,7 @@ H3 {
   }
   .recadrimage {
     width: 100%;
-    height: 225px;
+    height: 195px;
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
   }
@@ -1042,12 +1042,12 @@ H3 {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
     position: relative;
-    top: -150px;
+    top: -75px;
     bottom: -400px;
   }
   .recadrimage2 {
     width: 100%;
-    height: 225px;
+    height: 195px;
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
   }
@@ -1066,6 +1066,7 @@ H3 {
   .reglages_menu {
     background-color: white;
     border-radius: 0px 0px 10px 10px;
+    height: 270px;
   }
   footer {
     background-color: rgb(53, 53, 53);
@@ -1075,7 +1076,7 @@ H3 {
   .lien_footer {
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 40%;
     justify-content: space-around;
   }
   .lien_footer i {
@@ -1084,7 +1085,7 @@ H3 {
   .lien_footer2 {
     display: flex;
     align-items: center;
-    width: 17%;
+    width: 20%;
     justify-content: space-around;
   }
   .lien_footer a, .lien_footer2 a {
@@ -1133,7 +1134,7 @@ H3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 35%;
+    width: 50%;
     margin: auto;
   }
   .titrePalette h1 {
