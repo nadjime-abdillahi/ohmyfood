@@ -10,10 +10,16 @@ body {
   font-weight: 700;
   line-height: 28.13px;
   text-align: left;
+  margin: 0;
 }
 
 .header_nav, main section {
   padding: 10px;
+}
+
+.header_h2 {
+  width: 80%;
+  margin: auto;
 }
 
 .headerLogoIndex {
@@ -30,11 +36,13 @@ body {
 .headerLogoPage2 {
   width: 100%;
   margin: auto;
-  height: 70px;
 }
-.headerLogoPage2 img {
+.headerLogoPage2 .imgDesktop {
   width: 100%;
   margin: 0;
+}
+.headerLogoPage2 .imgMobile {
+  display: none;
 }
 
 .header_h1 {
@@ -63,12 +71,12 @@ body {
 .number1 {
   background-color: #9356DC;
   position: absolute;
-  width: 7%;
+  width: 4%;
   border-radius: 50px;
   text-align: center;
   display: flex;
   align-items: center;
-  left: 35px;
+  left: 60px;
 }
 .number1 div {
   margin: auto;
@@ -79,13 +87,13 @@ body {
   background-color: #99E2D0;
   position: absolute;
   width: 30%;
-  height: 4%;
+  height: 10%;
   border-radius: 5px;
   text-align: center;
   display: flex;
   align-items: center;
-  left: 205px;
-  top: 740px;
+  left: 375px;
+  top: 770px;
 }
 .nouveauplat div {
   margin: auto;
@@ -96,13 +104,13 @@ body {
   background-color: #99E2D0;
   position: absolute;
   width: 30%;
-  height: 4%;
+  height: 10%;
   border-radius: 5px;
   text-align: center;
   display: flex;
   align-items: center;
-  left: 205px;
-  top: 990px;
+  left: 375px;
+  top: 1025px;
 }
 .nouveauplat2 div {
   margin: auto;
@@ -115,15 +123,15 @@ body {
 
 .recentrer {
   width: 80%;
-  margin-left: 35px;
-  margin-bottom: 20px;
+  margin: auto;
+  padding-bottom: 30px;
 }
 
 .centrer {
   width: 100%;
   text-align: center;
   height: 70px;
-  border-radius: 50px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   background-color: var(--main-bg-header-color);
@@ -144,8 +152,8 @@ body {
 .menu_restaurants {
   display: block;
   width: 80%;
-  margin-left: 35px;
-  margin-bottom: 20px;
+  margin: auto;
+  padding-bottom: 30px;
 }
 
 .recadrimage {
@@ -222,6 +230,7 @@ footer {
 
 .bg_para_et_bouton {
   background-color: var(--main-bg-header-color);
+  height: 170px;
 }
 
 .header_nav {
