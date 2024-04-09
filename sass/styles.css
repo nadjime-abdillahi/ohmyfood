@@ -1007,10 +1007,10 @@ H3 {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 700px;
+    top: 717px;
     width: 120px;
     height: 30px;
-    left: 350px;
+    left: 333px;
   }
   .nouveauplat div {
     margin: auto;
@@ -1021,8 +1021,8 @@ H3 {
     position: absolute;
     width: 120px;
     height: 30px;
-    left: 850px;
-    top: 700px;
+    left: 833px;
+    top: 717px;
     border-radius: 5px;
     text-align: center;
     display: flex;
