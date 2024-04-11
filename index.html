@@ -17,10 +17,10 @@
     <link rel="stylesheet" type="text/css" href="sass/styles.css.map">
     <link rel="stylesheet" type="text/css" href="sass/styles.scss">
     <title>Ohmyfood</title>
-</head>
-<body onload="myFunction()" style="margin:0;">
-    <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom">
+        </head>
+        <body >
+            <div class="loader">
+            </div>
     <header>
         <section>
             <div class="headerLogoIndex">
@@ -193,11 +193,6 @@
         
         function myFunction() {
           myVar = setTimeout(showPage, 3000);
-        }
-        
-        function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
         }
 
         function myFunction2(x) {
