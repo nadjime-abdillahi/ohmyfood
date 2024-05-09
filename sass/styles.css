@@ -5,35 +5,57 @@ html {
   margin: 0;
 }
 
-.loader {
-  border-radius: 25%;
-  width: 100%;
-  height: 100%; /* Safari */
-  animation: spin2 2s linear;
-  animation-fill-mode: forwards;
-  position: fixed;
-  background-color: #9356DC;
-  margin: 0;
-  padding: 0;
-}
-@keyframes spin2 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-    display: none;
-    opacity: 0;
-  }
-}
 body {
   font-family: Roboto;
   font-weight: 700;
   line-height: 28.13px;
-  text-align: left;
+  text-align: center;
   margin: 0;
 }
 
+/*loader*/
+.loader {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  /*ici tout ce qui concerne votre background linear gradient*/
+  background-color: purple;
+  animation: hideLoader 3500ms 1 forwards;
+  animation-delay: 1500ms;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: black solid 5px;
+  border-top-color: red;
+  border-bottom-color: yellow;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.paragraphe {
+  font-size: 50px;
+}
+
+@keyframes hideLoader {
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 .header_nav, main section {
   padding: 10px;
 }
@@ -455,28 +477,7 @@ H3 {
   margin: positive;
 }
 
-@media screen and (min-width: 668px) and (max-width: 1023px) {
-  .loader {
-    border-radius: 25%;
-    width: 100%;
-    height: 100%; /* Safari */
-    animation: spin2 2s linear;
-    animation-fill-mode: forwards;
-    position: fixed;
-    background-color: #9356DC;
-    margin: 0;
-    padding: 0;
-  }
-  @keyframes spin2 {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(0deg);
-      display: none;
-      opacity: 0;
-    }
-  }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   html, body {
     margin: 0;
     font-family: Roboto;
@@ -848,6 +849,10 @@ H3 {
   }
 }
 @media screen and (min-width: 1024px) {
+  #loader-1:before, #loader-1:after {
+    left: 350px;
+    top: 100px;
+  }
   body {
     margin: 0;
   }
