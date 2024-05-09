@@ -849,10 +849,6 @@ H3 {
   }
 }
 @media screen and (min-width: 1024px) {
-  #loader-1:before, #loader-1:after {
-    left: 350px;
-    top: 100px;
-  }
   body {
     margin: 0;
   }
