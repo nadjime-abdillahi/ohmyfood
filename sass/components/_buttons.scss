@@ -1,0 +1,63 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+// *******
+// main btn with gradient
+// *******
+
+.hero__btn {
+    background: linear-gradient($color-main-600, $color-main-300);
+    color: white;
+    font-weight: $fw-medium;
+    padding: 16px 18px;
+    border-radius: 25px;
+    border: none;
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+    &::after {
+        content: "";
+        background-color: #fff;
+        opacity: 0;
+    }
+    &:hover {
+        opacity: 0.85;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.btn__commander {
+    margin: 28px auto 40px auto;
+    // calc(40px - 12px) margin-top - gap
+}
+.btn__commander--link {
+    @extend .hero__btn;
+    padding: 16px 48px;
+}
+
+// *******
+// liked button (heart)
+// *******
+
+.fa-heart {
+    font-size: 24px;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+.fa-heart-unliked {
+    grid-area: 1 / 1;
+    opacity: 1;
+    &:hover,
+    &:active {
+        opacity: 0;
+    }
+}
+.fa-heart-liked {
+    @include heart-gradient;
+    grid-area: 1 / 1;
+    opacity: 0;
+    &:hover,
+    &:active {
+        opacity: 1;
+    }
+}

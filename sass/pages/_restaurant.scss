@@ -1,0 +1,130 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+img[class="menu__img"] {
+    object-fit: cover;
+    height: 250px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.restaurants__page {
+    position: relative;
+}
+.menu {
+    gap: 12px;
+    max-width: 1055px;
+    margin: 0 auto;
+    background-color: $color-bg-light;
+}
+.menu__hero {
+    position: relative;
+}
+.menu__hero__title {
+    position: relative;
+    top: -25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    max-width: 1055px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 32px 17px 0px 17px;
+    background-color: $color-bg-light;
+
+    @media (min-width: 770px) {
+        justify-content: center;
+    }
+}
+
+.menu__hero__i {
+    display: grid;
+    margin-right: 15px;
+}
+.menu__carte {
+    max-width: 658px;
+    margin: 0 auto;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.menu__carte__title {
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    font-weight: $fw-main;
+}
+.menu__carte__title--underline {
+    border-bottom: solid 3px $color-accepted-300;
+}
+.menu__carte__title:not(.first-title) {
+    margin-top: 40px;
+}
+.menu__carte > * {
+    opacity: 0;
+    // All div have 0 opacity for the reveal menu animation
+}
+.plats {
+    display: grid;
+    padding: 13px 15px;
+    grid-template-areas:
+        "title     .    "
+        "sub-title price";
+    grid-template-columns: 1fr auto;
+    background-color: #fff;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    @media (min-width: 770px) {
+        max-width: 634px;
+    }
+}
+.plats__title {
+    grid-area: title;
+    margin-bottom: 5px;
+}
+.plats__description {
+    grid-area: sub-title;
+}
+
+.plats__title,
+.plats__description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.plats__prix {
+    grid-area: price;
+    font-weight: $fw-medium;
+    margin-left: 14px;
+    transition: all 300ms ease-in;
+    text-align: end;
+}
+
+.plats__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+    background: $color-accepted-300;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: all 300ms ease-in;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -75px;
+}
+
+// select div .plats__check in div .plats:hover
+:is(.plats:hover, .plats:active) :is(.plats__check) {
+    margin-right: 75px;
+    // width of the check icon
+}
+:is(.plats:hover, .plats:active) :is(.plats__prix) {
+    margin-right: 61px;
+    // width of the check icon - 14px padding
+}

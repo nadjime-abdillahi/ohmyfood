@@ -1,0 +1,13 @@
+@import "../utilities/variables";
+
+html {
+    font-family: $ff-main;
+    scroll-behavior: smooth;
+    scroll-padding: 50px;
+    position: relative;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: auto;
+}

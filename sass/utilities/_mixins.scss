@@ -1,0 +1,23 @@
+@import "../utilities/variables";
+
+@mixin heart-gradient {
+    background: -moz-linear-gradient(
+        top,
+        $color-main-300 0%,
+        $color-main-600 100%
+    );
+    background: -webkit-linear-gradient(
+        top,
+        $color-main-300 0%,
+        $color-main-600 100%
+    );
+    background: linear-gradient(
+        to bottom,
+        $color-main-300 0%,
+        $color-main-600 100%
+    );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

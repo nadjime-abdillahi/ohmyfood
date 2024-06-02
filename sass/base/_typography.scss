@@ -1,0 +1,25 @@
+@import "../utilities/variables";
+
+.menu__hero__title--logo,
+.footer__logo {
+    font-family: $ff-logo;
+    font-weight: 400;
+    font-style: normal;
+    color: #101010;
+}
+.hero__title {
+    @media (min-width: 770px) {
+        font-size: $fs-title-big;
+    }
+}
+.hero__sub-title {
+    font-size: $fs-sub-title;
+    font-weight: $fw-main;
+    margin-bottom: 26px;
+}
+
+.h2-home {
+    font-weight: $fw-heavy;
+    font-size: $fs-title;
+    margin-bottom: 26px;
+}

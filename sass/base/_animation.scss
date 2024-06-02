@@ -1,0 +1,77 @@
+// ***********
+// Restaurant menu
+// ***********
+
+//Make the menu appear one by one with for loop
+@keyframes menu-presentation {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+    }
+}
+//  for each div of menu__carte -> add 200ms delay
+// 💡 If some elements stay hidden, increase the number of nth-child
+@for $i from 1 through 14 {
+    .animation:nth-child(#{$i}) {
+        animation: menu-presentation 500ms ease-out calc($i * 200ms) forwards;
+    }
+}
+
+// ***********
+// LOADER
+// ***********
+
+@keyframes loading-bar {
+    // from left to right
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes opacity-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity-fade {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes miette-1 {
+    0% {
+    }
+    27% {
+        transform: translateY(0);
+    }
+    45%,
+    65% {
+        transform: translateY(400%);
+    }
+    55% {
+        transform: translateY(380%);
+    }
+
+    100% {
+        transform: translateY(400%);
+    }
+}
