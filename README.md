@@ -43,4 +43,4 @@ Ces actifs font partie des propriétés intellectuelles d’OpenClassromms et so
 Voici le lien du projet : https://github.com/nadjime-abdillahi/ohmyfood.github.io
 
 
-Voici le lien du site web : https://nadjime-abdillahi.github.io/ohmyfood.github.io/index.html
+Voici le lien du site web : https://nadjime-abdillahi.github.io/ohmyfood
